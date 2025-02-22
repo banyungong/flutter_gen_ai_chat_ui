@@ -206,9 +206,9 @@ class _StreamingExampleState extends State<StreamingExample>
             showOtherUsersAvatar: false,
             showTime: true,
             currentUserTimeTextColor:
-                Theme.of(context).colorScheme.onSurface.withValues(alpha: 179),
+                Theme.of(context).colorScheme.onSurface.withAlpha(179),
             timeTextColor:
-                Theme.of(context).colorScheme.onSurface.withValues(alpha: 179),
+                Theme.of(context).colorScheme.onSurface.withAlpha(179),
             messageTextBuilder:
                 (final message, final previousMessage, final nextMessage) {
               final bool isStreaming =
@@ -237,9 +237,8 @@ class _StreamingExampleState extends State<StreamingExample>
                           key: ValueKey(
                               '${message.createdAt.millisecondsSinceEpoch}_${message.text.length}'),
                           text: message.text,
-                          animate: !isStreaming &&
-                              !isUser &&
-                              isLatestMessage, // Update this line
+                          animate: !isStreaming && !isUser && isLatestMessage,
+                          // Update this line
                           isUser: isUser,
                           isStreaming: isStreaming,
                           style: TextStyle(

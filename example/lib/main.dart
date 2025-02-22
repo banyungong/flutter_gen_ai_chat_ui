@@ -131,7 +131,7 @@ class _ExamplesNavigatorState extends State<ExamplesNavigator> {
                   backgroundColor: widget.isDark
                       ? const Color(0xFF7B61FF).withAlpha(50)
                       : colorScheme.surfaceContainerHighest
-                          .withValues(alpha: 26),
+                          .withAlpha(26),
                 ),
                 onPressed: widget.onThemeToggle,
               ),

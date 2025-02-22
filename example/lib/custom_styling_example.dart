@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen_ai_chat_ui/flutter_gen_ai_chat_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:dash_chat_2/dash_chat_2.dart' as dash;
 
 class CustomStylingExample extends StatefulWidget {
   const CustomStylingExample({super.key});
@@ -158,7 +159,7 @@ Try the color scheme selector in the top right!""";
                   currentUserTimeTextColor: Colors.white.withOpacity(0.8),
                   borderRadius: 16,
                 ),
-                inputOptions: InputOptions(
+                inputOptions: dash.InputOptions(
                   inputTextStyle: GoogleFonts.inter(),
                   inputDecoration: InputDecoration(
                     hintText: 'Send a message',

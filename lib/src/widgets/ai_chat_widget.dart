@@ -501,27 +501,27 @@ class AiChatWidgetState extends State<AiChatWidget>
                       code: style.copyWith(
                         fontFamily: 'monospace',
                         backgroundColor: isDarkMode
-                            ? Colors.white.withValues(alpha: 26)
-                            : Colors.black.withValues(alpha: 26),
+                            ? Colors.white.withAlpha(26)
+                            : Colors.black.withAlpha(26),
                         fontSize: style.fontSize,
                       ),
                       codeblockDecoration: BoxDecoration(
                         color: isDarkMode
-                            ? Colors.white.withValues(alpha: 26)
-                            : Colors.black.withValues(alpha: 26),
+                            ? Colors.white.withAlpha(26)
+                            : Colors.black.withAlpha(26),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       blockquote: style,
                       blockquoteDecoration: BoxDecoration(
                         color: isDarkMode
-                            ? Colors.white.withValues(alpha: 26)
-                            : Colors.black.withValues(alpha: 26),
+                            ? Colors.white.withAlpha(26)
+                            : Colors.black.withAlpha(26),
                         borderRadius: BorderRadius.circular(8),
                         border: Border(
                           left: BorderSide(
                             color: isDarkMode
-                                ? Colors.white.withValues(alpha: 77)
-                                : Colors.black.withValues(alpha: 77),
+                                ? Colors.white.withAlpha(77)
+                                : Colors.black.withAlpha(77),
                             width: 4,
                           ),
                         ),

@@ -189,7 +189,7 @@ Would you like to know more about any specific aspect?""",
             shimmerBaseColor: Theme.of(context)
                 .colorScheme
                 .surfaceContainerHighest
-                .withValues(alpha: 128),
+                .withAlpha(128),
             shimmerHighlightColor: Theme.of(context).colorScheme.surface,
           ),
           config: AiChatConfig(

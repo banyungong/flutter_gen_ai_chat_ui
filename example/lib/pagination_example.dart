@@ -121,7 +121,7 @@ class _PaginationExampleState extends State<PaginationExample> {
           if (_hasError && _errorMessage != null)
             Container(
               padding: const EdgeInsets.all(8),
-              color: Colors.red.withValues(alpha: 26),
+              color: Colors.red.withAlpha(26),
               child: Row(
                 children: [
                   const Icon(Icons.error_outline, color: Colors.red),
