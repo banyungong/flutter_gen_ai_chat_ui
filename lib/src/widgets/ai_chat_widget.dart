@@ -618,6 +618,15 @@ class AiChatWidgetState extends State<AiChatWidget>
   }
 
   @override
+  void didUpdateWidget(covariant AiChatWidget oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.config.inputOptions?.sendButtonBuilder !=
+        widget.config.inputOptions?.sendButtonBuilder) {
+      setState(() {});
+    }
+  }
+
+  @override
   void dispose() {
     _scrollController.dispose();
     _animationController.dispose();
